@@ -6,10 +6,11 @@ body {
 #container {
   position: relative;
   overflow: hidden;
+  margin: auto;
+  /* Placeholder: Choose better values as we go forward */
   height: 95vh;
   width: 100%;
   border: 1px solid black;
-  margin: auto;
 }
 
 #content-canvas {
@@ -36,6 +37,7 @@ body {
   -o-transition: 300ms ease all;
   transition: 300ms ease all;
   
+  /* Prevent occasional flickering during animation */
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -43,26 +45,11 @@ body {
   backface-visibility: hidden;
 }
 
-/* Move the elements when the animation begins*/
-.show-context-sidebar
-#content-canvas {
-  -webkit-transform: translateX(-300px);
-  -moz-transform: translateX(-300px);
-  -ms-transform: translateX(-300px);
-  -o-transform: translateX(-300px);
-  transform: translateX(-300px);
-  
-  -webkit-transform: translate3d(-300px, 0, 0);
-  -moz-transform: translate3d(-300px, 0, 0);
-  -ms-transform: translate3d(-300px, 0, 0);
-  -o-transform: translate3d(-300px, 0, 0);
-  transform: translate3d(-300px, 0, 0);
-}
-
 #map-canvas {
   height: 100%;
 }
 
+/* Placeholder: Remove once we finish the maps api integration */
 #placeholder {
   margin: auto;
   width: 30rem;
@@ -73,7 +60,17 @@ body {
   border: 1px solid black;
 }
 
-/*  See context-sidebar-style.css for more */
+/* Only general style rules here */
+/* More detailed style rules in main-sidebar-style.css */
+#main-sidebar {
+  height: 100%;
+  width: 130pt;
+  position: absolute;
+  top: 0;
+}
+
+/* Only general style rules here */
+/* More detailed style rules in context-sidebar-style.css */
 #context-sidebar {
   width: 300px;
   height: 100%;

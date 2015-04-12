@@ -5,13 +5,17 @@
     <title>SaleOkase</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-sidebar-style.css">
     <link rel="stylesheet" href="context-sidebar-style.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="content-canvas">
+        <div id="main-sidebar" onmouseover="extendSide()" onmouseout="extendSide()">
+          <p>This is the main sidebar</p>
+        </div>
         <div id="context-sidebar">
           <a href="#" onclick="toggleNav()">Close</a>
         </div>

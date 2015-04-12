@@ -4,6 +4,10 @@ function toggleNav() {
   document.getElementById('container').classList.toggle('show-context-sidebar');
 }
 
+function extendSide() {
+  document.getElementById('container').classList.toggle('show-main-sidebar');
+}
+
 // Snippets taken from http://javascript.info/tutorial/animation
 
 // String -> ()
