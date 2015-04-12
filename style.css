@@ -53,23 +53,13 @@ body {
   height: 100%;
 }
 
-/* Placeholder: Remove once we finish the maps api integration */
-#placeholder {
-  margin: auto;
-  width: 30rem;
-  padding: 1rem 0 1rem 0;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  border: 1px solid black;
-}
-
 /* Only general style rules here */
 /* More detailed style rules in main-sidebar-style.css */
 #main-sidebar {
+  position: absolute;
   height: 100%;
   width: 130pt;
-  position: absolute;
+  z-index: 1;
   top: 0;
 }
 
