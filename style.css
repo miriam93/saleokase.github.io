@@ -82,7 +82,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 660px) {
   #phone-overlay {
     display: block;
     position: fixed;
