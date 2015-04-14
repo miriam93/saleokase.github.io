@@ -45,6 +45,10 @@ body {
   backface-visibility: hidden;
 }
 
+#phone-overlay {
+  display: none;
+}
+
 #map-canvas {
   height: 100%;
 }
@@ -78,8 +82,9 @@ body {
   top: 0;
 }
 
-#phone-overlay {
-  display: none;
+#close-arrow img {
+  width: 3rem;
+  height: auto;
 }
 
 @media only screen and (max-width: 660px) {
