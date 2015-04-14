@@ -31,11 +31,11 @@ body {
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   
-  -webkit-transition: 300ms ease all;
-  -moz-transition: 300ms ease all;
-  -ms-transition: 300ms ease all;
-  -o-transition: 300ms ease all;
-  transition: 300ms ease all;
+  -webkit-transition: 500ms ease all;
+  -moz-transition: 500ms ease all;
+  -ms-transition: 500ms ease all;
+  -o-transition: 500ms ease all;
+  transition: 500ms ease all;
   
   /* Prevent occasional flickering during animation */
   -webkit-backface-visibility: hidden;

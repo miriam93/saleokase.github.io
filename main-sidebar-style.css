@@ -1,6 +1,6 @@
 #main-sidebar {
   background-color: #407394;
-  left: calc(-130pt / 2);
+  left: calc(-130pt / 1.4);
 }
 
 #main-sidebar p {
@@ -12,17 +12,17 @@
 /* See script.js for more info */
 .show-main-sidebar
 #content-canvas {
-  -webkit-transform: translateX(calc(130pt / 2));
-  -moz-transform: translateX(calc(130pt / 2));
-  -ms-transform: translateX(calc(130pt / 2));
-  -o-transform: translateX(calc(130pt / 2));
-  transform: translateX(calc(130pt / 2));
+  -webkit-transform: translateX(calc(130pt / 1.4));
+  -moz-transform: translateX(calc(130pt / 1.4));
+  -ms-transform: translateX(calc(130pt / 1.4));
+  -o-transform: translateX(calc(130pt / 1.4));
+  transform: translateX(calc(130pt / 1.4));
   
-  -webkit-transform: translate3d(calc(130pt / 2), 0, 0);
-  -moz-transform: translate3d(calc(130pt / 2), 0, 0);
-  -ms-transform: translate3d(calc(130pt / 2), 0, 0);
-  -o-transform: translate3d(calc(130pt / 2), 0, 0);
-  transform: translate3d(calc(130pt / 2), 0, 0);
+  -webkit-transform: translate3d(calc(130pt / 1.4), 0, 0);
+  -moz-transform: translate3d(calc(130pt / 1.4), 0, 0);
+  -ms-transform: translate3d(calc(130pt / 1.4), 0, 0);
+  -o-transform: translate3d(calc(130pt / 1.4), 0, 0);
+  transform: translate3d(calc(130pt / 1.4), 0, 0);
 }
 
 .show-main-sidebar
