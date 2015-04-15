@@ -155,14 +155,3 @@ function cleanupCommentOnEnter(e) {
 function cleanupComment() {
   document.getElementById('body-comment').value = "";
 }
-
-/*--Función para comprobar que la contraseña no se repite en el SingUp--*/
-// function validarForm(form1) {
-  
-//   if(form1.password.value!=form1.repassword.value) {
-//     form1.password.focus();            //comprueba que sean iguales
-//     alert('Los contraseñas no coinciden');
-//     return false;
-//   }
-//   return true; 
-// }
