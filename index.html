@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main-sidebar-style.css">
     <link rel="stylesheet" href="context-sidebar-style.css">
+    <link rel="stylesheet" href="login-overlay.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
@@ -18,6 +19,67 @@
           <p>Don't worry, pretty soon you'll be able to browse this site from a phone, but, for the time being, we're sorry to say that you won't be able to use our site.</p>
         </div>
       </div>
+
+      <div id="login-overlay">
+        <div id="dialog-box">
+          <!-- Link header  -->
+          <div id="menudes">
+            <a id="lo" href="#" onClick="showLoginBox()">LOGIN</a> 
+            <a href="#" onClick="showSignupBox();">SIGNUP</a>
+            <div class="marca"></div>
+          </div>
+          
+          <!-- Login Form Box -->
+          <div id="login-box">
+            <div id="formlogin">
+              <form action="" method="post"> 
+                <div id="usernamelogin">
+                  <input id="userlogin" placeholder="Username/Email" type="text" name="username" maxlength=15 required/>
+                </div>
+                
+                <div id="passwordlogin">
+                  <input id="passlogin" placeholder="Password" type="password" name="password" maxlength=30 required/>
+                </div>
+                
+                <div id="submit">
+                  <!-- TODO: Validate data with js -->
+                  <a href="#" id="done" onclick="toggleLoginOverlay()">DONE</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Signup Form Box -->
+          <div id="signup-box">
+            <div id="formsingup">
+              <form action="" method="post" onsubmit="return validarForm(this);"> 
+                
+                <div id="usernamesingup">
+                  <input id="usersingup" placeholder="Username"  type="text" name="username"  maxlength=15 required/>
+                </div>
+                
+                <div id="email">
+                  <input id="mail" placeholder="Email" type="email" name="email" maxlength=50 required/>
+                </div>
+                
+                <div id="passwordsingup">
+                  <input id="passsingup" placeholder="Password" type="password" name="password" maxlength=30 required/>
+                </div>
+                
+                <div id="repassword">
+                  <input id="repass" placeholder="Repeat password" type="password" name="repassword" maxlength=30 required/>
+                </div>
+                
+                <div id="submit">
+                  <!-- TODO: Validate data with js -->
+                  <a href="#" id="done" onclick="toggleLoginOverlay()">DONE</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="content-canvas">
         <div id="main-sidebar" onmouseover="toggleMenu()" onmouseout="toggleMenu()">
           <p>This is the main sidebar</p>
