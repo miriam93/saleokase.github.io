@@ -94,8 +94,14 @@
 }
 
 #componente-usuario {
-    visibility:hidden;
     border: 1px solid #CCC;
+    display: 
+    background-color: #FFFFFF;
+    padding: .5em;
+    overflow: hidden;
+    
+}
+#search-user {
     background-color: #FFFFFF;
     padding: .5em;
     overflow: hidden;
@@ -159,7 +165,7 @@
 
 
 .butonPlus{
-    background-image:url(https://cdn3.iconfinder.com/data/icons/interface/100/plus_2-512.png);
+    background-image:url(more.png);
     background-size:contain;
     background-color: aliceblue;
     background-repeat:no-repeat;
@@ -168,8 +174,36 @@
     height: 40px;
 }
 
+.user-im{
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#search{
+    width: 60%;
+    height: 40px;
+    text-align: center;
+}
+
+
+
+.join-event{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.user{
+    width: 10px;
+    height: 10px;
+    margin-right: 50px;
+    
+}
+
 .butonTik{
-    background-image:url(http://img.genbeta.com/2013/12/tick.png);
+    background-image:url(tick.png);
     background-size:contain;
     background-color: aliceblue;
     background-repeat:no-repeat;
