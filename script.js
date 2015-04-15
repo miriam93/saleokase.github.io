@@ -1,4 +1,16 @@
 // () -> ()
+// Adds a listener for the esc key to exit the login dialog
+function setup() {
+  document.addEventListener('keyup',function(e) {
+    e = e || window.event;
+    if (document.getElementById('container').classList.contains('show-login-overlay')
+        && e.keyCode == 27) {
+      toggleLoginOverlay();
+    }
+  }, false);
+}
+
+// () -> ()
 // Toggles the context sidebar animation
 function toggleContext() {
   document.getElementById('container').classList.toggle('show-context-sidebar');
