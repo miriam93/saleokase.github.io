@@ -80,6 +80,18 @@ function toggleContext() {
 }
 
 // () -> ()
+// Toggles the user pane animation
+function toggleUserPane() {
+  document.getElementById('container').classList.toggle('show-user-sidebar');
+}
+
+// () -> ()
+// Toggles the user pane animation
+function toggleEventPane() {
+  document.getElementById('container').classList.toggle('show-event-sidebar');
+}
+
+// () -> ()
 // Toggles the main sidebar animation
 function toggleMenu() {
   document.getElementById('container').classList.toggle('show-main-sidebar');

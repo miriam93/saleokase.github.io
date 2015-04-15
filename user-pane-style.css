@@ -293,3 +293,8 @@
   height: 100%;
   width: 100%;
 }
+
+.show-event-sidebar
+#user-pane {
+  display: none;
+}

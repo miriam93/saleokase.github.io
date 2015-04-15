@@ -7,7 +7,9 @@
 /* Following rules apply when the class */
 /* show-main-sidebar is applied to the canvas */
 /* See script.js for more info */
-.show-context-sidebar
+.show-user-sidebar
+#content-canvas,
+.show-event-sidebar
 #content-canvas {
   -webkit-transform: translateX(-300px);
   -moz-transform: translateX(-300px);
