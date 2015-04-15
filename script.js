@@ -57,6 +57,23 @@ function searchQuery(query, type) {
 }
 
 // () -> ()
+// Adds a listener for the esc key to exit dialogs
+function setup() {
+  var ESC_KEY_CODE = 27;
+  document.addEventListener('keydown', function(e) {
+    e = e || window.event;
+    var container = document.getElementById('container');
+    if (e.keyCode == ESC_KEY_CODE) {
+      if (container.classList.contains('show-login-overlay')) {
+        toggleLoginOverlay();
+      } else if (container.classList.contains('show-context-sidebar')) {
+          toggleContext();
+      }
+    }
+  }, false);
+}
+
+// () -> ()
 // Toggles the context sidebar animation
 function toggleContext() {
   document.getElementById('container').classList.toggle('show-context-sidebar');
