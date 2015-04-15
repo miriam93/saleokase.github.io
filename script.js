@@ -1,7 +1,7 @@
 // () -> ()
 // Adds a listener for the esc key to exit the login dialog
 function setup() {
-  document.addEventListener('keyup',function(e) {
+  document.addEventListener('keydown',function(e) {
     e = e || window.event;
     if (document.getElementById('container').classList.contains('show-login-overlay')
         && e.keyCode == 27) {
