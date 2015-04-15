@@ -1,0 +1,237 @@
+/* TODO: Add comments */
+
+#login-overlay {
+  display: none;
+}
+
+.show-login-overlay
+#login-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.90);
+  z-index: 20;
+}
+
+.show-login-overlay
+#menudes {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  margin: 15% auto 1%;
+  background: #696969;
+  text-align:center;
+  padding-top: 1%;
+}
+
+.show-login-overlay
+#menudes a {
+  padding: 10%;
+  display: run-in;
+  width: 50%; /* 100% dividido por el número de elementos del menú */
+  padding: 10%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.show-login-overlay
+#signup-box {
+  display: none;
+}
+
+.show-login-overlay
+.marca {
+  position: relative;
+  bottom: 1%;
+  left: -40.5%; /* Al menos 1/2 del ancho de cada enlace */
+  width: 40%; /* 1/2 del ancho de cada enlace */
+  height: 4px;
+  background: #fff;
+  transition: 0.5s ease-in-out; 
+}
+.show-login-overlay
+#menudes a:nth-child(1):hover ~ .marca {
+  left: 9%; /* 1/4 Ancho del enlace */
+}
+.show-login-overlay
+#menudes a:nth-child(2):hover ~ .marca {
+  left: 49%; /* 1/4 Ancho del enlace + 1 vez ancho enlace */
+}
+
+.show-login-overlay
+#lo{
+  border-right: solid;
+}
+
+.show-login-box
+#formlogin{
+  width: 20%;
+  height: 25%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  margin-top: -3.5%;
+  margin-left: -5%;
+  background-color: #C0C0C0;
+}
+
+.show-login-box
+#usernamelogin{
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+}
+
+.show-login-box
+#userlogin{
+  width:100%;
+  font-family: Verdana;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.show-login-box
+#passwordlogin{
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.show-login-box
+#passlogin{
+  width:100%;
+  font-family: Verdana;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.show-login-box
+#submit{
+  padding-bottom: 5%;
+  padding-left: 38%;
+  padding-top: 5%;
+
+}
+
+.show-login-box
+#done{
+  font-size:15pt;
+  font-family:Verdana;
+  color:white;
+  background:#696969;
+  border:0px;
+  width:40%;
+}
+
+.show-signup-box
+#login-box {
+  display: none;
+}
+
+.show-signup-box
+#signup-box {
+  display: inherit;
+}
+
+.show-signup-box
+#formsingup{
+  width: 20%;
+  height: 40%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  margin-top: -3.5%;
+  margin-left: -5%;
+  background-color: #C0C0C0;
+}
+
+.show-signup-box
+#usernamesingup{
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+}
+
+.show-signup-box
+#usersingup{
+  width:100%;
+  font-family: Verdana;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.show-signup-box
+#passwordsingup{
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.show-signup-box
+#passsingup{
+  width:100%;
+  font-family: Verdana;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.show-signup-box
+#email{
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.show-signup-box
+#mail{
+  width:100%;
+  font-family: Verdana;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.show-signup-box
+#repassword{
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.show-signup-box
+#repass{
+  width:100%;
+  font-family: Verdana;
+  font-size: 15pt;
+  text-align: center;
+}
+.show-signup-box
+#submit{
+  padding-bottom: 5%;
+  padding-left: 38%;
+  padding-top: 5%;
+
+}
+
+.show-signup-box
+#done{
+  font-size:15pt;
+  font-family:Verdana;
+  color:white;
+  background:#696969;
+  border:0px;
+  width:40%;
+}
+
+.show-login-box
+#signup-box {
+  display: none;
+}
