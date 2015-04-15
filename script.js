@@ -86,6 +86,14 @@ function toggleMenu() {
 }
 
 // () -> ()
+// Toggles the add user to event component
+function toggleAddUser() {
+  var elem = document.getElementById('componente-usuario');
+  elem.style.display = (elem.style.display == 'none') ? 'block' : 'none';
+}
+
+
+// () -> ()
 // Shows the login dialog, darkens the background
 function toggleLoginOverlay() {
   document.getElementById('container').classList.toggle('show-login-overlay');

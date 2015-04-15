@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="user-pane-style.css">
     <link rel="stylesheet" href="search-pane-style.css">
     <link rel="stylesheet" href="panelevento.css">
+    <link rel="stylesheet" href="view-event-pane.css">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="mostrar.js"></script>
   </head>
   <body onload="setup()">
     <div id="container">
-
+      
       <!-- Phone notice overlay -->
       <div id="phone-overlay">
         <div id="phone-dialog">
@@ -89,7 +90,7 @@
           </div>
         </div>
       </div>
-
+      
       <!-- Main content canvas -->
       <div id="content-canvas">
         <!-- Menu Sidebar -->
@@ -157,12 +158,102 @@
                 <img src="./img/assets/dots.png" />
               </div>
             </div>
-        </div>
+          </div>
         </div>
         
-        <!-- TODO: Add View-Event Panel -->
+        <div class="context-sidebar" id="view-event-pane">
+          <div id="event-close">
+            <a href="#" onclick="toggleContext()">Close</a>
+          </div>
+          <div id="event-header">
+            <div id="event-title">
+              <span>TITULO DEL EVENTO</span>
+            </div>
+            <div id="event-location">
+              <span>LOCALIZACION</span>
+            </div>
+            <div id="event-creator">
+              <span>CREATOR</span>
+            </div>
+          </div>
+          
+          <div id="event-submit">
+            <input type="submit" class="butonTik" value="" />
+          </div>
+          
+          <div id="event-more">
+            <input type="button" class="butonPlus" value="" onclick="toggleAddUser()"/>
+          </div>
+          <div id="componente-usuario">
+            <div id="search-user">
+              <img class="user-im" src="./img/assets/lupa.png" />
+              <input type="text" id="search" value="Busca amigo..."/> 
+            </div>
+            <div>
+              <img class="user-im" SRC="default.png" />
+              <span class="user">Usuario1
+              </span>
+              <input type="checkbox" name="userjoin" value="join" class="join-event">
+            </div>
+            <div>
+              <img class="user-im" SRC="default.png" />
+              <span class="user">Usuario1
+              </span>
+              <input type="checkbox" name="userjoin" value="join" class="join-event">
+            </div>
+            <div>
+              <img class="user-im" SRC="default.png" />
+              <span class="user">Usuario1
+              </span>
+              <input type="checkbox" name="userjoin" value="join" class="join-event">
+            </div>
+            
+          </div>
+          <div id="event-body">
+            Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla...Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla...Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla...Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla..Cuerpo ejemplo del evento.. bla bla bla.. lo pasaremos muy bien... bla bla bla.. muchos datos muy interesantes.. bla bla bla
+          </div>
+          <div id="comments-title" ><span>Comentarios</span>
+          </div>
+          <div id="event-comments">
+            
+            <div class="event-comment">
+              <a href="" class="comment-user" onclick="toggleContext()">
+                User Foo
+              </a>
+              <div class="comment-body">
+                <p>
+                  Ayy lmao
+                </p>
+              </div>
+            </div>
+            <div class="event-comment">
+              <a href="" class="comment-user" onclick="toggleContext()">
+                User Bar
+              </a>
+              <div class="comment-body">
+                <p>
+                  This event sucks
+                </p>
+              </div>
+            </div>
+            <div class="event-comment">
+              <a href="" class="comment-user" onclick="toggleContext()">
+                User Baz
+              </a>
+              <div class="comment-body">
+                <p>
+                  Had a good chuckle with this!
+                </p>
+              </div>
+            </div>
+            <div id="add-comment">
+              <textarea id="body-comment" spellcheck="false" placeholder="Introduce tu comentario..."></textarea>
+              <input type="submit" id="submit-comment"/>
+            </div>
+          </div>
+        </div>
         <!-- TODO: Add Create-Event Panel -->
-
+        
         <!-- Context sidebar: User Panel -->
         <div class="context-sidebar" id="user-pane">
           <div id="botones-info-user">
@@ -332,7 +423,7 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Map goes here -->
         <div id="map-canvas">
           <!-- TODO: Remove placeholder -->
