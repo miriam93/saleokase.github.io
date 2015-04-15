@@ -10,8 +10,10 @@ function setup() {
     if (e.keyCode == ESC_KEY_CODE) {
       if (container.classList.contains('show-login-overlay')) {
         toggleLoginOverlay();
-      } else if (container.classList.contains('show-context-sidebar')) {
-          toggleContext();
+      } else if (container.classList.contains('show-event-sidebar')) {
+        toggleEventPane();
+      } else if (container.classList.contains('show-user-sidebar')) {
+        toggleUserPane();
       }
     }
   }, false);

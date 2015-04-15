@@ -82,12 +82,12 @@ body {
   top: 0;
 }
 
-#close-arrow img {
+.close-arrow img {
   width: 3rem;
   height: auto;
 }
 
-#close-arrow img {
+.close-arrow img {
   width: 3rem;
   height: auto;
 }
