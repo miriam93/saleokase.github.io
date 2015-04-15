@@ -1,3 +1,4 @@
+<!--TODO: Add map -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -15,14 +16,20 @@
   </head>
   <body onload="setup()">
     <div id="container">
+
+      <!-- Phone notice overlay -->
       <div id="phone-overlay">
         <div id="phone-dialog">
           <h1>Phone version isn't quite ready yet!</h1>
-          <p>Don't worry, pretty soon you'll be able to browse this site from a phone, but, for the time being, we're sorry to say that you won't be able to use our site.</p>
+          <p>
+            Don't worry, pretty soon you'll be able to browse this site from a phone, but, for the time being, we're sorry to say that you won't be able to use our site.
+          </p>
         </div>
       </div>
-      
+
+      <!-- Login popup overlay -->
       <div id="login-overlay">
+        <!-- Popup main box -->
         <div id="dialog-box">
           <!-- Link header  -->
           <div id="menudes">
@@ -81,32 +88,75 @@
           </div>
         </div>
       </div>
-      
+
+      <!-- Main content canvas -->
       <div id="content-canvas">
+        <!-- Menu Sidebar -->
         <div id="main-sidebar" onmouseover="toggleMenu()" onmouseout="toggleMenu()">
-          <p>This is the main sidebar</p>
-          
-          <!--PANEL DE BUSQUEDA -->
-          
-          <div id="search-pane">
-            <div id = "search-filters">
-              <button type="button" name="Eventos" value="">Eventos</button>
-              <button type="button" name="Contactos" value="">Usuarios</button>
+          <!-- Header, contains the icon and the self link -->
+          <div class="menu-section" id="menu-header">
+            <div id="menu-logo-icon">
+              <a href="/"><img src="./img/assets/logo.png" /></a>
             </div>
-            <div id = "search-bottom">
-              <div id = "search-box">
-                <input type="text" placeholder="Buscar...">
-              </div>
-              <div id ="search-button">
-                <a href='#' onclick="busqueda()">
-                  <img src= "./img/assets/magnifying-glass-303408_640.png"></a>
-                
+          </div>
+          <!-- Search section -->
+          <div class="menu-section" id="menu-search">
+            <div id="menu-search-icon">
+              <img src="./img/assets/search.png" />
+            </div>
+            <div id="menu-search-widget">
+              <!--PANEL DE BUSQUEDA -->
+              
+              <div id="search-pane">
+                <div id = "search-filters">
+                  <button type="button" name="Eventos" value="">Eventos</button>
+                  <button type="button" name="Contactos" value="">Usuarios</button>
+                </div>
+                <div id = "search-bottom">
+                  <div id = "search-box">
+                    <input type="text" placeholder="Buscar...">
+                  </div>
+                  <div id ="search-button">
+                    <a href='#' onclick="busqueda()">
+                      <img src= "./img/assets/magnifying-glass-303408_640.png"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
-          <!-- ..................-->
+          <div class="menu-section" id="links-container">
+            <div id="about-container">
+              <a href="about.html" target="_blank">ABOUT</a>
+            </div>
+            <div id="contact-container">
+              <a href="contact.html" target="_blank">CONTACT</a>
+            </div>
+            <div id="legal-container">
+              <a href="unicorn.html" target="_blank">Terms of Service</a>
+              <a href="unicorn.html" target="_blank">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="menu-section" id="login-container">
+            <div id="login-button-wrapper">
+              <a href="#">LOGIN</a>
+            </div>
+          </div>
+          <div class="menu-section" id="more-container">
+            <div id="copyright-info">
+              <p>Some copyright stuff here</p>
+            </div>
+            <div id="more-icon">
+              <div id="dots-wrapper">
+                <img src="./img/assets/dots.png" />
+              </div>
+            </div>
+          </div>
         </div>
+        
+        <!-- TODO: Add View-Event Panel -->
+        <!-- TODO: Add Create-Event Panel -->
+
+        <!-- Context sidebar: User Panel -->
         <div class="context-sidebar" id="user-pane">
           <div id="botones-info-user">
             <div id = "botones">
@@ -275,7 +325,10 @@
             </div>
           </div>
         </div>
+
+        <!-- Map goes here -->
         <div id="map-canvas">
+          <!-- TODO: Remove placeholder -->
           <div id="placeholder">
             Map goes here
             <a href="#" onclick="toggleContext()">Toggle Sidebar</a>
