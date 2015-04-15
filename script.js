@@ -138,6 +138,22 @@ function removeSignupBox() {
   document.getElementById('dialog-box').classList.remove('show-signup-box');
 }
 
+// Event -> ()
+// Cleans up the comment textarea
+function cleanupCommentOnEnter(e) {
+  var ENTER_KEY_CODE = 13;
+  e = e || window.event;
+  if (e.keyCode == ENTER_KEY_CODE) {
+    document.getElementById('body-comment').value = "";
+  }
+}
+
+// () -> ()
+// Cleans up the comment textarea
+function cleanupComment() {
+  document.getElementById('body-comment').value = "";
+}
+
 /*--Función para comprobar que la contraseña no se repite en el SingUp--*/
 // function validarForm(form1) {
   

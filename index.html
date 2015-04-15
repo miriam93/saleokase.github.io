@@ -245,8 +245,8 @@
               </div>
             </div>
             <div id="add-comment">
-              <textarea id="body-comment" spellcheck="false" placeholder="Introduce tu comentario..."></textarea>
-              <input type="submit" id="submit-comment"/>
+              <textarea id="body-comment" spellcheck="false" placeholder="Introduce tu comentario..." onkeypress="cleanupCommentOnEnter(event)"></textarea>
+              <input type="submit" id="submit-comment" onclick="cleanupComment()"/>
             </div>
           </div>
         </div>
