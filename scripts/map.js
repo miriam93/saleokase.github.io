@@ -13,7 +13,6 @@ function initialize() {
     var latitude = event.latLng.lat();
     var longitude = event.latLng.lng();
     console.log(latitude + ', ' + longitude);
-    map.panTo(new google.maps.LatLng(latitude, longitude));
 });
 }
 
