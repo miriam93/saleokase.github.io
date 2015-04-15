@@ -1,5 +1,5 @@
 /* Panel-dependent options */
-#context-sidebar {
+.context-sidebar {
   right: -300px;;
   background-color: #deb32d;
 }
