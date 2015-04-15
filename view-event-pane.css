@@ -43,7 +43,7 @@
   padding: 2%;
   overflow: scroll;
   min-height: 25%;
-  max-height: 50%;;
+  max-height: 50%;
 }
 
 #comments-title {
@@ -78,7 +78,7 @@
   background-color: #FFFFFF;
   padding: 1%;
   overflow: scroll;
-  max-height: 25%;;
+  max-height: 25%;
 }
 
 #event-comments a {
