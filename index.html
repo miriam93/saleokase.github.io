@@ -84,25 +84,24 @@
       <div id="content-canvas">
         <div id="main-sidebar" onmouseover="toggleMenu()" onmouseout="toggleMenu()">
           <p>This is the main sidebar</p>
-          <!-- BUSQUEDA
-bot󮠠<a href="#" onclick=FUNCION QUE BUSQUE EVENTO">Close</a>
-CUANDO LE DE A INTRO DESAPARECE EL TEXTO
-
--->
+          <!-- TODO: Add search widget -->
         </div>
-        <div id="context-sidebar" id="user-pane">
+        <div class="context-sidebar" id="user-pane">
           <div id="botones-info-user">
             <div id = "botones">
               <div id="cerrar">
-                <a href="#" onclick="toggleContext()">Close</a>
+                <a href="#" onclick="toggleContext()" id="close-arrow"><img src="./img/assets/close-arrow.png" /></a>
               </div>
+              <!-- TODO: Add new icon with js -->
               <div id = "nuevo">
-                <a href="#" onclick="cambiarTic()">Añadir </a> <!-- Función cambiarTic: cambia el icono -->
+                <a href="#" onclick="cambiarTic()" id="add-contact">
+                  <img src="./img/assets/add-contact.png" />
+                </a>
               </div>
             </div>
             <div id="info-usuario">
               <div id= "semicirculo-arriba">
-                <img src="img/usuario.jpg">
+                <img src="./img/assets/usuario.jpg">
                 <h5>Nombre</h5>
               </div>
               <div id= "semicirculo-abajo">
@@ -172,7 +171,7 @@ CUANDO LE DE A INTRO DESAPARECE EL TEXTO
                   <li>
                     <div id= "contacto">
                       <div id= "contacto-imagen">
-                        <img src="img/usuario3.jpg">
+                        <img src="./img/assets/usuario3.jpg">
                       </div>
                       <div id = "contacto-link">
                         <a href="#" onclick="cambiarTic()">Contacto A </a>
@@ -186,7 +185,7 @@ CUANDO LE DE A INTRO DESAPARECE EL TEXTO
                   <li>
                     <div id= "contacto">
                       <div id= "contacto-imagen">
-                        <img src="img/usuario2.jpg">
+                        <img src="./img/assets/usuario2.jpg">
                       </div>
                       <div id = "contacto-link">
                         <a href="#" onclick="cambiarTic()">Contacto B </a>
@@ -200,7 +199,7 @@ CUANDO LE DE A INTRO DESAPARECE EL TEXTO
                   <li>
                     <div id= "contacto">
                       <div id= "contacto-imagen">
-                        <img src="img/usuario4.jpeg">
+                        <img src="./img/assets/usuario4.jpeg">
                       </div>
                       <div id = "contacto-link">
                         <a href="#" onclick="cambiarTic()">Contacto C </a>

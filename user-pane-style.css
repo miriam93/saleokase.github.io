@@ -1,3 +1,13 @@
+/* TODO: Añadir comentarios */
+/* Hoja de estilos del panel de usario */
+
+#add-contact img {
+  padding-top: .3rem;
+  padding-right: .3rem;
+  width: 2.3rem;
+  height: auto;
+}
+
 #botones{
 	width: 100%;
 	height: 20%;
