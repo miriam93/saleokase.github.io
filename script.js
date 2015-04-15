@@ -1,11 +1,16 @@
 // () -> ()
-// Adds a listener for the esc key to exit the login dialog
+// Adds a listener for the esc key to exit dialogs
 function setup() {
-  document.addEventListener('keydown',function(e) {
+  var ESC_KEY_CODE = 27;
+  document.addEventListener('keydown', function(e) {
     e = e || window.event;
-    if (document.getElementById('container').classList.contains('show-login-overlay')
-        && e.keyCode == 27) {
-      toggleLoginOverlay();
+    var container = document.getElementById('container');
+    if (e.keyCode == ESC_KEY_CODE) {
+      if (container.classList.contains('show-login-overlay')) {
+        toggleLoginOverlay();
+      } else if (container.classList.contains('show-context-sidebar')) {
+          toggleContext();
+      }
     }
   }, false);
 }
