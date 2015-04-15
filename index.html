@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>SaleOkase</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main-sidebar-style.css">
     <link rel="stylesheet" href="context-sidebar-style.css">
+	<link rel="stylesheet" href="user-pane-style.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
@@ -15,15 +16,182 @@
       <div id="phone-overlay">
         <div id="phone-dialog">
           <h1>Phone version isn't quite ready yet!</h1>
-          <p>Don't worry, pretty soon you'll be able to browse this site from a phone, but, for the time being, we're sorry to say that you won't be able to use our site.</p>
+          <p>Don't worry, pretty soon you'll be able to browse this site from a phone, but, for the time being, we're sorry to say that you won't               be able to use our site.</p>
         </div>
       </div>
       <div id="content-canvas">
         <div id="main-sidebar" onmouseover="toggleMenu()" onmouseout="toggleMenu()">
           <p>This is the main sidebar</p>
+		  <!-- BUSQUEDA
+			bot󮠠<a href="#" onclick=FUNCION QUE BUSQUE EVENTO">Close</a>
+			CUANDO LE DE A INTRO DESAPARECE EL TEXTO
+			
+		  -->
         </div>
-        <div id="context-sidebar">
-          <a href="#" onclick="toggleContext()">Close</a>
+        <div id="context-sidebar" id="user-pane">
+			<div id="botones-info-user">
+				<div id = "botones">
+					<div id="cerrar">
+						<a href="#" onclick="toggleContext()">Close</a>
+					</div>
+					<div id = "nuevo">
+						<a href="#" onclick="cambiarTic()">Añadir </a> <!-- Función cambiarTic: cambia el icono -->
+					</div>
+				</div>
+				<div id="info-usuario">
+					<div id= "semicirculo-arriba">
+                        <img src="img/usuario.jpg">
+				        <h5>Nombre</h5>
+                    </div>
+                    <div id= "semicirculo-abajo">
+                    </div>
+				</div>
+		 	</div> 
+            <div id="listas">
+                <div id="event-list">
+                    <div id="title-event-list">
+                         <h4>Lista de eventos</h4>
+                    </div>
+                    <div id="lista">  
+                        <ul>
+                            <li>
+                                <div id= "evento">
+                                    <div id = "evento-link">
+                                        <a href="#" onclick="cambiarTic()">Evento A </a>
+                                    </div>
+                                    <div id="checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li>
+                             <li>
+                                <div id= "evento">
+                                    <div id = "evento-link">
+                                        <a href="#" onclick="cambiarTic()">Evento B </a>
+                                    </div>
+                                    <div id="checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>
+                                <div id= "evento">
+                                    <div id = "evento-link">
+                                        <a href="#" onclick="cambiarTic()">Evento C </a>
+                                    </div>
+                                    <div id="checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id= "evento">
+                                    <div id = "evento-link">
+                                        <a href="#" onclick="cambiarTic()">Evento D </a>
+                                    </div>
+                                    <div id="checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="contact-list">
+                    <div id="title-contact-list">
+                        <h4>Lista de contactos</h4>
+                    </div>
+                    <div id="lista">  
+                        <ul>
+                            <li>
+                                <div id= "contacto">
+                                    <div id= "contacto-imagen">
+                                        <img src="img/usuario3.jpg">
+                                    </div>
+                                    <div id = "contacto-link">
+                                        <a href="#" onclick="cambiarTic()">Contacto A </a>
+                                    </div>
+                                    <div id="contacto-checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id= "contacto">
+                                    <div id= "contacto-imagen">
+                                        <img src="img/usuario2.jpg">
+                                    </div>
+                                    <div id = "contacto-link">
+                                        <a href="#" onclick="cambiarTic()">Contacto B </a>
+                                    </div>
+                                    <div id="contacto-checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id= "contacto">
+                                    <div id= "contacto-imagen">
+                                        <img src="img/usuario4.jpeg">
+                                    </div>
+                                    <div id = "contacto-link">
+                                        <a href="#" onclick="cambiarTic()">Contacto C </a>
+                                    </div>
+                                    <div id="contacto-checkbox">           
+	                                       <input type="checkbox" value="None" />
+	                                       <label></label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div id="feed-list">
+                    <div id="title-feed-list">
+                         <h4>Feed</h4>
+                    </div>
+                    <div id="lista">  
+                        <ul>
+                            <li> 
+                                <div id ="feed">
+                                    <div id="feed-text">
+                                        <p> El evento A ha sido cancelado.</p>
+                                    </div>
+                                    <div id="feed-link">
+                                        <a href="#" onclick="cambiarTic()"> > </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> 
+                                <div id ="feed">
+                                    <div id="feed-text">
+                                        <p> El evento C ha sido modificado.</p>
+                                    </div>
+                                    <div id="feed-link">
+                                        <a href="#" onclick="cambiarTic()"> > </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> 
+                                <div id ="feed">
+                                    <div id="feed-text">
+                                        <p> El usuario A ha comentado en el evento X.</p>
+                                    </div>
+                                    <div id="feed-link">
+                                        <a href="#" onclick="cambiarTic()"> > </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>		  
         </div>
         <div id="map-canvas">
           <div id="placeholder">
