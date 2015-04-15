@@ -62,8 +62,14 @@
   text-align: center;
 }
 
+.show-main-sidebar
+.menu-section {
+  padding: 0;
+}
+
+.show-main-sidebar
 #links-container {
-  
+  padding-top: 4rem;
 }
 
 #login-container,
@@ -82,14 +88,12 @@
 
 #dots-wrapper {
   width: 35pt;
-  margin: auto;
 }
 
 #dots-wrapper img {
   width: calc(130pt / 4);
   height: auto;
 }
-
 
   /* Following rules apply when the class        */
  /* show-main-sidebar is applied to the canvas  */
@@ -139,5 +143,75 @@
 .show-main-sidebar
 #menu-search-widget {
   display: inherit;
+}
+
+/* Button styling when menu is expanded */
+.show-main-sidebar
+.menu-button {
+  font-weight: bold;
+  background-clip: #407394;
+  color: #ffffff;
+  padding: 1rem 0 1rem 0;
   margin: auto;
+  border-top: 2px solid #5380A0;
+  border-bottom: 1px solid #5380A0;
+  text-align: center;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 0px 0px #407090;
+}
+
+.show-main-sidebar
+.menu-button:hover {
+  background-color: #38617D;
+}
+
+.show-main-sidebar
+#login-container {
+  display: inherit;
+  padding-top: 4rem;
+}
+
+.show-main-sidebar
+#login-button-wrapper {
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #895B93;
+  border-radius: 3px;
+  width: 85%;
+  height: 2.5rem;
+  margin: auto;
+  box-shadow: 0px 3px 0px 0px #764F7E;
+  border: none;
+}
+
+.show-main-sidebar
+#login-button-wrapper:hover {
+  background-color: #764F7E;
+  box-shadow: 0px 3px 0px 0px #634369;
+}
+
+.show-main-sidebar
+#login-container 
+#login-button-wrapper span {
+  position: relative;
+  top: 35%;
+}
+
+.show-main-sidebar
+#more-container {
+  padding-top: 50%;
+}
+
+.show-main-sidebar
+#more-icon {
+  display: none;
+}
+
+.show-main-sidebar
+#copyright-info {
+  display: inherit;
+  text-align: center;
+  font-size: 9pt;
+  color: #82A4B9;
 }

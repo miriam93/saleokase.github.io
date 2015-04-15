@@ -105,53 +105,60 @@
               <img src="./img/assets/search.png" />
             </div>
             <div id="menu-search-widget">
-              <!--PANEL DE BUSQUEDA -->
-              
+              <!-- Search widget -->
               <div id="search-pane">
-                <div id = "search-filters">
-                  <button type="button" name="Eventos" value="">Eventos</button>
-                  <button type="button" name="Contactos" value="">Usuarios</button>
+                <div id="search-filters">
+                  <button id="search-event-button" type="button" name="Eventos" onclick="searchEvents()" value="">Eventos</button>
+                  <button id="search-user-button" type="button" name="Contactos" onclick="searchUsers()" value="">Usuarios</button>
                 </div>
-                <div id = "search-bottom">
-                  <div id = "search-box">
-                    <input type="text" placeholder="Buscar...">
+                <div id="search-bottom">
+                  <div id="search-box">
+                    <input id="search-input" type="text" onkeypress="searchKeyPress(event)" placeholder="Buscar...">
                   </div>
-                  <div id ="search-button">
-                    <a href='#' onclick="busqueda()">
-                      <img src= "./img/assets/magnifying-glass-303408_640.png"></a>
+                  <div id="search-button">
+                    <a href='#' onclick="searchButtonPress()">
+                      <img src= "./img/assets/search.png"></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Links Container -->
           <div class="menu-section" id="links-container">
-            <div id="about-container">
+            <div class="menu-button" id="about-container">
               <a href="about.html" target="_blank">ABOUT</a>
             </div>
-            <div id="contact-container">
+            <div class="menu-button" id="contact-container">
               <a href="contact.html" target="_blank">CONTACT</a>
             </div>
-            <div id="legal-container">
+            <div class="menu-button" id="tos-container">
               <a href="unicorn.html" target="_blank">Terms of Service</a>
+            </div>
+            <div class="menu-button" id="privacy-container">
               <a href="unicorn.html" target="_blank">Privacy Policy</a>
             </div>
           </div>
+          <!-- Login Container -->
           <div class="menu-section" id="login-container">
             <div id="login-button-wrapper">
-              <a href="#">LOGIN</a>
+              <span><a href="#" onclick="toggleLoginOverlay()">LOGIN</a></span>
             </div>
           </div>
+          <!-- Copyright info Container-->
           <div class="menu-section" id="more-container">
             <div id="copyright-info">
-              <p>Some copyright stuff here</p>
+              <p>Copyright © 2015 SaleOkase</p>
             </div>
+          </div>
+          <div class="menu-section" id="dots-container">
             <div id="more-icon">
               <div id="dots-wrapper">
                 <img src="./img/assets/dots.png" />
               </div>
             </div>
-          </div>
         </div>
+        </div>
+        
         
         <!-- TODO: Add View-Event Panel -->
         <!-- TODO: Add Create-Event Panel -->
@@ -159,12 +166,12 @@
         <!-- Context sidebar: User Panel -->
         <div class="context-sidebar" id="user-pane">
           <div id="botones-info-user">
-            <div id = "botones">
+            <div id="botones">
               <div id="cerrar">
                 <a href="#" onclick="toggleContext()" id="close-arrow"><img src="./img/assets/close-arrow.png" /></a>
               </div>
               <!-- TODO: Add new icon with js -->
-              <div id = "nuevo">
+              <div id="nuevo">
                 <a href="#" onclick="cambiarTic()" id="add-contact">
                   <img src="./img/assets/add-contact.png" />
                 </a>
@@ -188,7 +195,7 @@
                 <ul>
                   <li>
                     <div id= "evento">
-                      <div id = "evento-link">
+                      <div id="evento-link">
                         <a href="#" onclick="cambiarTic()">Evento A </a>
                       </div>
                       <div id="checkbox">
@@ -199,7 +206,7 @@
                   </li>
                   <li>
                     <div id= "evento">
-                      <div id = "evento-link">
+                      <div id="evento-link">
                         <a href="#" onclick="cambiarTic()">Evento B </a>
                       </div>
                       <div id="checkbox">
@@ -210,7 +217,7 @@
                   </li>
                   <li>
                     <div id= "evento">
-                      <div id = "evento-link">
+                      <div id="evento-link">
                         <a href="#" onclick="cambiarTic()">Evento C </a>
                       </div>
                       <div id="checkbox">
@@ -221,7 +228,7 @@
                   </li>
                   <li>
                     <div id= "evento">
-                      <div id = "evento-link">
+                      <div id="evento-link">
                         <a href="#" onclick="cambiarTic()">Evento D </a>
                       </div>
                       <div id="checkbox">
@@ -244,7 +251,7 @@
                       <div id= "contacto-imagen">
                         <img src="./img/assets/usuario3.jpg">
                       </div>
-                      <div id = "contacto-link">
+                      <div id="contacto-link">
                         <a href="#" onclick="cambiarTic()">Contacto A </a>
                       </div>
                       <div id="contacto-checkbox">
@@ -258,7 +265,7 @@
                       <div id= "contacto-imagen">
                         <img src="./img/assets/usuario2.jpg">
                       </div>
-                      <div id = "contacto-link">
+                      <div id="contacto-link">
                         <a href="#" onclick="cambiarTic()">Contacto B </a>
                       </div>
                       <div id="contacto-checkbox">
@@ -272,7 +279,7 @@
                       <div id= "contacto-imagen">
                         <img src="./img/assets/usuario4.jpeg">
                       </div>
-                      <div id = "contacto-link">
+                      <div id="contacto-link">
                         <a href="#" onclick="cambiarTic()">Contacto C </a>
                       </div>
                       <div id="contacto-checkbox">
@@ -291,7 +298,7 @@
               <div id="lista">
                 <ul>
                   <li>
-                    <div id ="feed">
+                    <div id="feed">
                       <div id="feed-text">
                         <p> El evento A ha sido cancelado.</p>
                       </div>
@@ -301,7 +308,7 @@
                     </div>
                   </li>
                   <li>
-                    <div id ="feed">
+                    <div id="feed">
                       <div id="feed-text">
                         <p> El evento C ha sido modificado.</p>
                       </div>
@@ -311,7 +318,7 @@
                     </div>
                   </li>
                   <li>
-                    <div id ="feed">
+                    <div id="feed">
                       <div id="feed-text">
                         <p> El usuario A ha comentado en el evento X.</p>
                       </div>
