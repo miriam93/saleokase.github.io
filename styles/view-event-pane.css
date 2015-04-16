@@ -154,7 +154,7 @@
 }
 
 .butonPlus{
-  background-image:url("./img/assets/more.png");
+  background-image:url("/img/assets/more.png");
   background-size:contain;
   background-color: #F0F8FF;
   background-repeat:no-repeat;
@@ -190,7 +190,7 @@
 }
 
 .butonTik{
-  background-image:url("./img/assets/tick.png");
+  background-image:url("/img/assets/tick.png");
   background-size:contain;
   background-color: #F0F8FF;
   background-repeat:no-repeat;
