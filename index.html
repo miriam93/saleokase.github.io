@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./styles/user-pane-style.css">
     <link rel="stylesheet" href="./styles/search-pane-style.css">
     <link rel="stylesheet" href="./styles/view-event-pane.css">
-    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    <script type="text/javascript" src="/scripts/login-handler.js"></script>
+    <script type="text/javascript" src="/scripts/search-handler.js"></script>
   </head>
   <body onload="setup()" id="container">
       <!-- Phone notice overlay -->
@@ -30,59 +32,44 @@
       <div id="login-overlay">
         <!-- Popup main box -->
         <div id="dialog-box">
-          <!-- Link header  -->
-          <div id="menudes">
-            <a id="lo" href="#" onClick="showLoginBox()">LOGIN</a> 
-            <a href="#" onClick="showSignupBox();">SIGNUP</a>
-            <div class="marca"></div>
-          </div>
-          
-          <!-- Login Form Box -->
-          <div id="login-box">
-            <div id="formlogin">
-              <form action="" method="post"> 
-                <div id="usernamelogin">
-                  <input id="userlogin" placeholder="Username/Email" type="text" name="username" maxlength=15 required/>
+          <!-- Top popup box-->
+          <div id="login-top-panel">
+            <!-- Color portion of popup top box -->
+            <div id="login-top-image">
+              <div id="login-circle-container">
+                <div id="login-circle-image"></div>
+              </div>
+            </div>
+            <div id="login-main-panel">
+              <div id="login-credentials-panel">
+                <h1>Welcome!</h1>
+                <p>Authenticate to continue to SaleOkase</p>
+                <div id="login-credentials-input">
+                  <input id="login-user-text" type="text" spellcheck="false" placeholder="username">
+                  <div class="login-credential-separator"></div>
+                  <input id="login-pass-text" type="password" placeholder="password">
                 </div>
-                
-                <div id="passwordlogin">
-                  <input id="passlogin" placeholder="Password" type="password" name="password" maxlength=30 required/>
+                <div id="signup-credentials-input">
+                  <input id="signup-email-text" type="email" spellcheck="false" placeholder="email">
+                  <div class="login-credential-separator"></div>
+                  <input id="signup-user-text" type="text" spellcheck="false" placeholder="username">
+                  <div class="login-credential-separator"></div>
+                  <input id="signup-pass-text" type="password" placeholder="password">
                 </div>
-                
-                <div id="submit">
-                  <!-- TODO: Validate data with js -->
-                  <a href="#" id="done" onclick="toggleLoginOverlay()">DONE</a>
-                </div>
-              </form>
+              </div>
+              <div id="login-submit">
+                <button class="submit-button" onclick="loginSubmit()">LOG IN</button>
+              </div>
+              <div id="signup-submit">
+                <button class="submit-button" onclick="signupSubmit()">SIGN UP</button>
+              </div>
             </div>
           </div>
-          
-          <!-- Signup Form Box -->
-          <div id="signup-box">
-            <div id="formsingup">
-              <form action="" method="post" onsubmit="return validarForm(this);"> 
-                
-                <div id="usernamesingup">
-                  <input id="usersingup" placeholder="Username"  type="text" name="username"  maxlength=15 required/>
-                </div>
-                
-                <div id="email">
-                  <input id="mail" placeholder="Email" type="email" name="email" maxlength=50 required/>
-                </div>
-                
-                <div id="passwordsingup">
-                  <input id="passsingup" placeholder="Password" type="password" name="password" maxlength=30 required/>
-                </div>
-                
-                <div id="repassword">
-                  <input id="repass" placeholder="Repeat password" type="password" name="repassword" maxlength=30 required/>
-                </div>
-                
-                <div id="submit">
-                  <!-- TODO: Validate data with js -->
-                  <a href="#" id="done" onclick="toggleLoginOverlay()">DONE</a>
-                </div>
-              </form>
+          <!-- Bottom popup box containing the switch panel link -->
+          <div id="login-bottom-panel">
+            <div id="switch">
+              <a href="#" id="signup-link" onclick="toggleLoginPane()">CREATE AN ACCOUNT</a>
+              <a href="#" id="login-link" onclick="toggleLoginPane()">ALREADY HAVE AN ACCOUNT?</a>
             </div>
           </div>
         </div>

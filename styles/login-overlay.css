@@ -12,225 +12,181 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.90);
+  background-color: rgba(0,0,0,0.75);
   z-index: 20;
 }
 
-.show-login-overlay
-#menudes {
+#dialog-box {
   position: relative;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 5%;
+  width: 50%;
+  min-height: 780px;
+  height: 85%;
+}
+
+.show-signup-pane
+#dialog-box {
+  margin-top: 2%;
+}
+
+#login-top-panel {
+  height: 85%;
+  background-color: #fdfdfd;
+}
+
+.show-signup-pane
+#login-top-panel {
+  height: 95%;
+}
+
+#login-top-image {
+  height: calc(100% / 3);
+  background-color: #8899A7;
+}
+
+#login-circle-container {
+  position: relative;
+  /* TODO: Fix image moving */
+  top: 60%;
+}
+
+#login-circle-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #FDFDFD;
   overflow: hidden;
-  width: 30%;
-  margin: 15% auto 1%;
-  background: #696969;
-  text-align:center;
-  padding-top: 1%;
+  background-image: url("/img/assets/usuario.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.show-login-overlay
-#menudes a {
-  padding: 10%;
-  display: run-in;
-  width: 50%; /* 100% dividido por el número de elementos del menú */
-  padding: 10%;
-  color: #fff;
-  text-decoration: none;
-}
-
-.show-login-overlay
-#signup-box {
-  display: none;
-}
-
-.show-login-overlay
-.marca {
-  position: relative;
-  bottom: 1%;
-  left: -52.5%; /* Al menos 1/2 del ancho de cada enlace */
-  width: 52%; /* 1/2 del ancho de cada enlace */
-  height: 4px;
-  background: #fff;
-  transition: 0.5s ease-in-out; 
-}
-.show-login-overlay
-#menudes a:nth-child(1):hover ~ .marca {
-  left: -4%; /* 1/4 Ancho del enlace */
-}
-.show-login-overlay
-#menudes a:nth-child(2):hover ~ .marca {
-  left: 48%; /* 1/4 Ancho del enlace + 1 vez ancho enlace */
-}
-
-.show-login-overlay
-#lo{
-  border-right: solid;
-}
-
-.show-login-box
-#formlogin{
-  position: relative;
-  overflow: hidden;
-  width: 30%;
-  margin: 2% auto 1%;
-  background: #C0C0C0;
-}
-
-.show-login-box
-#usernamelogin{
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 10%;
-}
-
-.show-login-box
-#userlogin{
-  width:100%;
-  font-family: Verdana;
-  font-size: 15pt;
+#login-credentials-panel {
+  padding-top: 13%;
   text-align: center;
 }
 
-.show-login-box
-#passwordlogin{
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 5%;
-}
-
-.show-login-box
-#passlogin{
-  width:100%;
-  font-family: Verdana;
-  font-size: 15pt;
-  text-align: center;
-}
-
-.show-login-box
-#submit{
-  padding-bottom: 5%;
-  padding-left: 38%;
-  padding-top: 5%;
-
-}
-
-.show-login-box
-#done{
-  font-size:15pt;
-  font-family:Verdana;
-  color: #ffffff;
-  background:#696969;
-  border:0px;
-  width:40%;
-}
-
-.show-signup-box
-#login-box {
+#signup-credentials-input {
   display: none;
 }
 
-.show-signup-box
-#signup-box {
+.show-signup-pane
+#login-credentials-input {
+  display: none;
+}
+
+.show-signup-pane
+#signup-credentials-input {
   display: inherit;
 }
 
-.show-signup-box
-#formsingup{
-  position: relative;
-  overflow: hidden;
-  width: 30%;
-  margin: 2% auto 1%;
-  background: #C0C0C0;
-}
-
-.show-signup-box
-#usernamesingup{
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 10%;
-}
-
-.show-signup-box
-#usersingup{
-  width:100%;
-  font-family: Verdana;
-  font-size: 15pt;
+#login-credentials-input input,
+#signup-credentials-input input {
   text-align: center;
-}
-
-.show-signup-box
-#passwordsingup{
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 5%;
-}
-
-.show-signup-box
-#passsingup{
-  width:100%;
-  font-family: Verdana;
+  width: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+  background-color: #fdfdfd;
+  margin-top: 1%;
+  margin-bottom: 1%;
   font-size: 15pt;
+}
+
+#login-credentials-input input:focus,
+#signup-credentials-input input:focus{
+  outline: 0;
+}
+
+#login-credentials-input input::-webkit-input-placeholder,
+#signup-credentials-input input::-webkit-input-placeholder {
+  font-size: 12pt;
+  font-weight: lighter;
+  color: #e0e0e0;
+}
+
+.login-credential-separator {
+  width: 75%;
+  margin: auto;
+  border-bottom: 2px solid #B0B0B0;
+}
+
+#login-submit,
+#signup-submit {
   text-align: center;
+  margin-top: 5%;
 }
 
-.show-signup-box
-#email{
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 5%;
-}
-
-.show-signup-box
-#mail{
-  width:100%;
-  font-family: Verdana;
-  font-size: 15pt;
-  text-align: center;
-}
-
-.show-signup-box
-#repassword{
-  padding-bottom: 5%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 5%;
-}
-
-.show-signup-box
-#repass{
-  width:100%;
-  font-family: Verdana;
-  font-size: 15pt;
-  text-align: center;
-}
-.show-signup-box
-#submit{
-  padding-bottom: 5%;
-  padding-left: 38%;
-  padding-top: 5%;
-
-}
-
-.show-signup-box
-#done{
-  font-size:15pt;
-  font-family:Verdana;
-  color:white;
-  background:#696969;
-  border:0px;
-  width:40%;
-}
-
-a:link   
-{   
- text-decoration:none;   
-}   
-
-.show-login-box
-#signup-box {
+#signup-submit {
   display: none;
+}
+
+.show-signup-pane
+#login-submit {
+  display: none;
+}
+
+.show-signup-pane
+#signup-submit {
+  display: inherit;
+}
+
+.submit-button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #439AF1;
+  outline: none;
+  border: none;
+  padding: 1rem 6rem;
+  box-shadow: 0px 5px 0px 0px #3880C8;
+  
+  -webkit-transition: background 0.1s ease-in-out;
+  -moz-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  -o-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #3880C8;
+}
+
+
+#login-bottom-panel {
+  margin-top: 5%;
+  height: 10%;
+  background-color: #fdfdfd;
+}
+
+#login-bottom-panel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#switch {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  font-weight: lighter;
+  color: #5589FF;
+}
+
+#login-link {
+  display: none;
+}
+
+.show-signup-pane
+#signup-link {
+  display: none;
+}
+
+.show-signup-pane
+#login-link {
+  display: inherit;
 }
