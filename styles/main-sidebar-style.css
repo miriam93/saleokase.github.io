@@ -173,6 +173,7 @@
 
 .show-main-sidebar
 #login-button-wrapper {
+  cursor: pointer;
   text-align: center;
   font-weight: bold;
   color: #FFFFFF;
