@@ -8,6 +8,7 @@ function toggleLoginOverlay() {
 }
 
 // () -> ()
+// Switches between the login and the signup pane inside the overlay box
 function toggleLoginPane() {
   document.getElementById('login-overlay').classList.toggle('show-signup-pane');
   document.getElementById(
@@ -16,6 +17,8 @@ function toggleLoginPane() {
 }
 
 // () -> ()
+// Gets the values from the login form.
+// Alerts the user if the user / pass combination is wrong, otherwise hides the overlay and continues to the site
 function loginSubmit() {
   var user = document.getElementById('login-user-text').value;
   var pass = document.getElementById('login-pass-text').value;
@@ -26,15 +29,16 @@ function loginSubmit() {
   }
 }
 
-//function signupSubmit() {
-//  var email = document.getElementById
-//}
-
 // String String -> Boolean
+// Returns true if the login credentials are valid
+// TODO: Actually do something
 function validateLoginCredentials(user, pass) {
   return true;
 }
 
+// () -> ()
+// Gets the values from the signup form.
+// Alerts the user if the user / email / pass combination is wrong, otherwise hides the overlay and continues to the site
 function signupSubmit() {
   var email = document.getElementById('signup-email-text').value;
   var user = document.getElementById('signup-user-text').value;
@@ -46,6 +50,9 @@ function signupSubmit() {
   }
 }
 
+// String String String -> Boolean
+// Returns true if the signup credentials are valid
+// TODO: Actually do something
 function validateSignupCredentials(email, user, pass) {
   return true;
 }
