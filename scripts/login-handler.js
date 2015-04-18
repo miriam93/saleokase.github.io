@@ -9,7 +9,7 @@ function toggleLoginOverlay() {
 
 // () -> ()
 // Switches between the login and the signup pane inside the overlay box
-function toggleLoginPane() {
+function toggleCredentialsPane() {
   document.getElementById('login-overlay').classList.toggle('show-signup-pane');
   document.getElementById(
     (document.getElementById('login-overlay').classList.contains('show-signup-pane'))
