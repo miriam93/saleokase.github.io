@@ -15,7 +15,7 @@
   </head>
   <body>
     <div id="cabecera">
-      <img src="./img/assets/logo.png" alt="Logo">
+      <a href="/"><img src="./img/assets/logo.png" alt="Logo"></a>
       <h1>COLA DE MODERACIÓN</h1>
     </div>
     
@@ -28,8 +28,8 @@
           <label><h4>Mensaje:<br/></h4></label>
           <p class="mensaje">Pepito está faltando al respeto a los miembros inscritos en el evento</p>
         </fieldset>
-        <button id="aceptar" type="button" onclick='eliminar(this)'>Aceptar</button> 
-        <button id="rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
+        <button class="moderation-button aceptar" type="button" onclick='eliminar(this)'>Aceptar</button>
+        <button class="moderation-button rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
       </div>						
       <div id="reporte-2">
         <fieldset class="r">
@@ -39,8 +39,8 @@
           <label><h4>Mensaje:<br/></h4></label>
           <p class="mensaje">No me gusta el color de la página</p>
         </fieldset>
-        <button id="aceptar" type="button" onclick='eliminar(this)'>Aceptar</button> 
-        <button id="rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
+        <button class="moderation-button aceptar" type="button" onclick='eliminar(this)'>Aceptar</button>
+        <button class="moderation-button rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
       </div>
       <div id="reporte-3">
         <fieldset class="r">
@@ -50,8 +50,8 @@
           <label><h4>Mensaje:<br/></h4></label>
           <p class="mensaje">Hay un error en la fecha de un evento.</p>
         </fieldset>
-        <button id="aceptar" type="button" onclick='eliminar(this)'>Aceptar</button> 
-        <button id="rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
+        <button class="moderation-button aceptar" type="button" onclick='eliminar(this)'>Aceptar</button>
+        <button class="moderation-button rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
       </div>
       <div id="reporte-4">
         <fieldset class="r">
@@ -61,10 +61,9 @@
           <label><h4>Mensaje:<br/></h4></label>
           <p class="mensaje">Un usuario se dedica a mandar invitaciones de eventos siempre.</p>
         </fieldset>
-        <button id="aceptar" type="button" onclick='eliminar(this)'>Aceptar</button> 
-        <button id="rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
+        <button class="moderation-button aceptar" type="button" onclick='eliminar(this)'>Aceptar</button>
+        <button class="moderation-button rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
       </div>
-      
       <div id="reporte-5">
         <fieldset class="r">
           <legend>Reporte5:</legend>
@@ -73,10 +72,9 @@
           <label><h4>Mensaje:<br/></h4></label>
           <p class="mensaje">Quiero que se modifique un eror en mi cuenta.</p>
         </fieldset>
-        <button id="aceptar" type="button" onclick='eliminar(this)'>Aceptar</button> 
-        <button id="rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
+        <button class="moderation-button aceptar" type="button" onclick='eliminar(this)'>Aceptar</button>
+        <button class="moderation-button rechazar" type="button" onclick='eliminar(this)'>Rechazar</button>
       </div>
-      
     </div>
   </body>
 </html>
