@@ -1,3 +1,5 @@
+/* Create Event Sidebar style rules */
+
 #create-event-pane {
   display: none;
 }
@@ -9,135 +11,131 @@
   border-left: 1px solid black;
 }
 
-#create-event-form { 
-  padding-top: 5%;
+#create-event-pane input::-webkit-input-placeholder,
+#create-event-pane textarea::-webkit-input-placeholder {
+  font-weight: lighter;
+  color: #e0e0e0;
+}
+
+#create-event-pane textarea::-webkit-input-placeholder {
+  text-align: center;
+}
+
+#create-event-title-wrapper {
+  padding-bottom: 15%;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 #create-event-title {
-  height: 4.4rem;
-  width: 98%;
-  border: 0px ;
-  background-color: #deb32d;
-  font-family: Verdana;
-  font-size: 10pt;
+  height: 6rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 17pt;
+  text-align: center;
 }
 
 #create-event-location-wrapper {
-  padding-top: 10%;
+  padding: 10% 0 10% 0;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 #create-event-location {
-  height: 10%;
-  width: 98%;
-  border: 0px ;
-  background-color: #deb32d;
-  font-family: Verdana;
-  font-size: 10pt;
+  height: 2rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 12pt;
+  text-align: center;
 }
 
 #create-event-description-wrapper {
-  padding-top: 10%;
+  padding: 10% 0 10% 1%;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 #create-event-description {
-  height: 10rem; 
-  border: 0px ;
-  background-color: #deb32d;
-  font-family: Verdana;
-  font-size: 10pt;
+  height: 18rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 12pt;
   resize: none;
 }
 
-#botondone {
-  font-size:20px;
-  font-family:Verdana;
+#create-event-action-buttons {
+  padding-top: 5%;
+  height: 2rem;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#submit-event {
+  cursor: pointer;
+  float: left;
+  font-size: 15pt;
+  height: 2rem;
   font-weight:bold;
-  color:white;
-  background:#638cb5;
-  border:0px;
-  width:80%;
+  color: #ffffff;
+  background-color: #638cb5;
+  border: 0;
+  width: 85%;
 }
 
-#botonmas {
-  font-size:20px;
-  font-family:Verdana;
+#submit-event-add-file-button {
+  float: right;
+  width: 13%;
+  height: 2rem;
+  color: #ffffff;
+  background-color: #638cb5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#submit-event-add-file {
+  display: none;
+}
+
+#create-event-context-buttons {
+  padding-top: 5%;
+  height: 6rem;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 5%;
+}
+
+#added-contact-wrapper {
+  float: left;
+  width: 6rem;;
+  height: 6rem;
+}
+
+#add-contact-component {
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+}
+
+/* TODO: Figure out why this isn't in line with the rest*/
+#create-event-monetize {
+  display: none;
+  float: right;
+  width: 6rem;;
+  height: 6rem;
+}
+
+#submit-new-event-wrapper {
+  padding-top: 5%;
+}
+
+#submit-new-event {
+  cursor: pointer;
+  width: 100%;
+  height: 4rem;
+  font-size: 20pt;
   font-weight:bold;
-  color:white;
+  color: #ffffff;
   background:#638cb5;
-  border:0px;
-  width:18%;
-}
-
-#botoncont {
-  font-size:20px;
-  font-family:Verdana;
-  font-weight:bold;
-  color:white;
-  background:#638cb5;
-  border:0px;
-  width:32%;
-}
-
-#botonmasmenu {
-  font-size:20px;
-  font-family:Verdana;
-  font-weight:bold;
-  color:white;
-  background:#638cb5;
-  border:0px;
-  width:32%;
-}
-
-#botoneuro {
-  font-size:20px;
-  font-family:Verdana;
-  font-weight:bold;
-  color:white;
-  background:#638cb5;
-  border:0px;
-  width:32%;
-}
-
-#menu {
-  font-family:Verdana;
-}
-
-ul, ol {
-  list-style:none;
-}
-
-#nav > li {
-  float:left;
-}
-
-#nav li a {
-  background-color:#638cb5;
-  color:#fff;
-  text-decoration:none;
-  padding:10% 5%;
-  display:block;
-}
-
-#nav li a:hover {
-  background-color:#434343;
-}
-
-#nav li ul {
-  display:none;
-  position:absolute;
-  min-width:140px;
-}
-
-#nav li:hover > ul {
-  display:block;
-}
-
-#botondone2{
-  font-size:20px;
-  font-family:Verdana;
-  font-weight:bold;
-  color:white;
-  background:#638cb5;
-  border:0px;
-  width:99%;
+  border: 0;
+  outline: none;
 }
