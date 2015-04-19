@@ -23,6 +23,9 @@ function loginSubmit() {
   var user = document.getElementById('login-user-text').value;
   var pass = document.getElementById('login-pass-text').value;
   if (validateLoginCredentials(user, pass)) {
+    if (user === 'mod' && pass === 'mod') {
+      window.open('mod-panel.html', '_blank');
+    }
     toggleLoginOverlay();
   } else {
     alert("Bad user/pass combination!");
