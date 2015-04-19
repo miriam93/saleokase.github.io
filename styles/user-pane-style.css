@@ -1,6 +1,15 @@
 /* TODO: Añadir comentarios */
 /* Hoja de estilos del panel de usario */
 
+#user-pane {
+  display: none;
+}
+
+.show-user-sidebar
+#user-pane {
+  display: inherit;
+}
+
 #add-contact img {
   padding-top: .3rem;
   padding-right: .3rem;
@@ -292,9 +301,4 @@
   margin-bottom: auto;
   height: 100%;
   width: 100%;
-}
-
-.show-event-sidebar
-#user-pane {
-  display: none;
 }

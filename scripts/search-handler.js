@@ -1,4 +1,5 @@
 // All search widget related functions go here
+var searchOption = "event";
 
 // () -> ()
 // Sets the search query to users, updates the button style

@@ -1,4 +1,10 @@
 #view-event-pane {
+  display: none;
+}
+
+.show-event-sidebar
+#view-event-pane {
+  display: inherit;
   background-color: #FFFFFF;
   border-left: 1px solid black;
 }

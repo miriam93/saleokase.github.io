@@ -1,4 +1,8 @@
-var searchOption = "event";
+var PaneEnum = Object.freeze({
+  "user":1,
+  "event":2,
+  "create":3
+});
 
 // () -> ()
 // Adds a listener for the esc key to exit dialogs
@@ -11,24 +15,29 @@ function setup() {
       if (container.classList.contains('show-login-overlay')) {
         toggleLoginOverlay();
       } else if (container.classList.contains('show-event-sidebar')) {
-        toggleEventPane();
+        togglePane(PaneEnum.event);
       } else if (container.classList.contains('show-user-sidebar')) {
-        toggleUserPane();
+        togglePane(PaneEnum.user);
       }
     }
   }, false);
 }
 
-// () -> ()
-// Triggers the user pane slide animation
-function toggleUserPane() {
-  document.getElementById('container').classList.toggle('show-user-sidebar');
-}
-
-// () -> ()
-// Triggers the event pane slide animation
-function toggleEventPane() {
-  document.getElementById('container').classList.toggle('show-event-sidebar');
+// PaneEnum -> ()
+// Triggers the slide animation for the given pane
+function togglePane(pane) {
+  var foo = document.getElementById('container').classList;
+  switch(pane) {
+      case PaneEnum.user:
+        foo.toggle('show-user-sidebar');
+        break;
+      case PaneEnum.create:
+        foo.toggle('show-create-sidebar');
+        break;
+      case PaneEnum.event:
+        foo.toggle('show-event-sidebar');
+        break;
+  }
 }
 
 // () -> ()

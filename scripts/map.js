@@ -9,7 +9,7 @@ function initialize() {
   
   // gets user coordinates on right click
   google.maps.event.addListener(map, 'rightclick', function(event) {
-    toggleEventPane();
+    togglePane(PaneEnum.event);
     var latitude = event.latLng.lat();
     var longitude = event.latLng.lng();
     console.log(latitude + ', ' + longitude);
