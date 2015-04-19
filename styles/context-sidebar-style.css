@@ -7,6 +7,8 @@
 /* Following rules apply when the class */
 /* show-main-sidebar is applied to the canvas */
 /* See script.js for more info */
+.show-create-sidebar
+#content-canvas,
 .show-user-sidebar
 #content-canvas,
 .show-event-sidebar

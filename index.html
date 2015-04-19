@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/user-pane-style.css">
     <link rel="stylesheet" href="/styles/search-pane-style.css">
     <link rel="stylesheet" href="/styles/view-event-pane.css">
+    <link rel="stylesheet" href="/styles/create-event-pane.css">
     <script type="text/javascript" src="/scripts/main.js"></script>
     <script type="text/javascript" src="/scripts/login-handler.js"></script>
     <script type="text/javascript" src="/scripts/search-handler.js"></script>
@@ -406,6 +407,39 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="context-sidebar" id="create-event-pane">
+          <a href="#" onclick="toggleCreatePane()" class="close-arrow"><img src="/img/assets/close-arrow.png" /></a>
+          <form id="create-event-form">
+            <div id="create-event-title-wrapper">
+              <input id="create-event-title" placeholder="Enter your title here..." type="text">
+            </div>
+            <div id="create-event-location-wrapper">
+              <input id="create-event-location" placeholder="Enter the location here..." type="text">
+            </div>
+            <div id="create-event-description-wrapper">
+              <textarea id="create-event-description" placeholder="Talk a bit about your event..."></textarea>
+            </div>
+            <div><input type="submit" value="Done" id="botondone"><input type="file" value="+" id="botonmas"></div>
+            <div id="tresbotones">
+              <input type="submit" value="Cont" id="botoncont">
+              <input type="submit" value="€" id="botoneuro">
+              <div id="menu">
+                <ul id="nav">
+                  <li><input type="" value="+" id="botonmasmenu">
+                    <ul>
+                      <li><a href="">contenido1</a></li>
+                      <li><a href="">contenido2</a></li>
+                      <li><a href="">contenido3</a></li>
+                      <li><a href="">contenido4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div><input type="submit" value="Done" id="botondone2"></div>
+          </form>
         </div>
         <div id="map-canvas"></div>
       </div>

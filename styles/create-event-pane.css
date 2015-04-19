@@ -1,0 +1,143 @@
+#create-event-pane {
+  display: none;
+}
+
+.show-create-sidebar
+#create-event-pane {
+  display: inherit;
+  background-color: #ffffff;
+  border-left: 1px solid black;
+}
+
+#create-event-form { 
+  padding-top: 5%;
+}
+
+#create-event-title {
+  height: 4.4rem;
+  width: 98%;
+  border: 0px ;
+  background-color: #deb32d;
+  font-family: Verdana;
+  font-size: 10pt;
+}
+
+#create-event-location-wrapper {
+  padding-top: 10%;
+}
+
+#create-event-location {
+  height: 10%;
+  width: 98%;
+  border: 0px ;
+  background-color: #deb32d;
+  font-family: Verdana;
+  font-size: 10pt;
+}
+
+#create-event-description-wrapper {
+  padding-top: 10%;
+}
+
+#create-event-description {
+  height: 10rem; 
+  border: 0px ;
+  background-color: #deb32d;
+  font-family: Verdana;
+  font-size: 10pt;
+  resize: none;
+}
+
+#botondone {
+  font-size:20px;
+  font-family:Verdana;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:80%;
+}
+
+#botonmas {
+  font-size:20px;
+  font-family:Verdana;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:18%;
+}
+
+#botoncont {
+  font-size:20px;
+  font-family:Verdana;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:32%;
+}
+
+#botonmasmenu {
+  font-size:20px;
+  font-family:Verdana;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:32%;
+}
+
+#botoneuro {
+  font-size:20px;
+  font-family:Verdana;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:32%;
+}
+
+#menu {
+  font-family:Verdana;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+#nav > li {
+  float:left;
+}
+
+#nav li a {
+  background-color:#638cb5;
+  color:#fff;
+  text-decoration:none;
+  padding:10% 5%;
+  display:block;
+}
+
+#nav li a:hover {
+  background-color:#434343;
+}
+
+#nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+#nav li:hover > ul {
+  display:block;
+}
+
+#botondone2{
+  font-size:20px;
+  font-family:Verdana;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:99%;
+}

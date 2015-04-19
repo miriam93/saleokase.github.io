@@ -18,6 +18,8 @@ function setup() {
         togglePane(PaneEnum.event);
       } else if (container.classList.contains('show-user-sidebar')) {
         togglePane(PaneEnum.user);
+      } else if (container.classList.contains('show-create-sidebar')) {
+        togglePane(PaneEnum.create);
       }
     }
   }, false);
