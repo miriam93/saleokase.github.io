@@ -1,7 +1,5 @@
 #### Pasos a seguir para desarrollar
 
-Ver [CONTRIBUTE.md](./CONTRIBUTE.md)
-
 1. Hacer un fork del proyecto.
 
 2. Clonad localmente la copia.
