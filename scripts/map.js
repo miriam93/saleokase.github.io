@@ -7,7 +7,7 @@ function initialize() {
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   
-  setupEvents(map);
+  setupMarkers(map);
 
   // gets user coordinates on right click
   google.maps.event.addListener(map, 'rightclick', function(event) {
@@ -20,7 +20,7 @@ function initialize() {
 
 // google.maps.Map -> ()
 // Create the events and draw them to the given map
-function setupEvents(mapObject) {
+function setupMarkers(mapObject) {
   var eventMarker1 = new google.maps.Marker({
     position: new google.maps.LatLng(40.35, -3.65),
     map: mapObject,
