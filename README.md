@@ -1,17 +1,17 @@
 # SaleOkase
 
+#### Uso de la web
+
+1. Login (Botón en la barra desplegable izquierda). (Loguearse como `mod/mod` para acceder al panel de moderación).
+
+2. Click derecho sobre el mapa desplegará el menú de crear evento.
+
+3. Click en cualquiera de los marcadores nos mostrará información resumida sobre el mismo.
+
+4. Pinchando en el nombre del evento se nos desplegará una barra con toda la información del evento.
+
+5. Haciendo click en los nombres de usuario de los comentarios en el evento nos desplegará la barra de detalles sobre el usuario.
+
 #### Pasos a seguir para desarrollar
 
-1. Hacer un fork del proyecto.
-
-2. Clonad localmente la copia.
-
-3. Hacer localmente los cambios y subidlos a vuestra copia.
-
-4. Cuando penséis que vuestros cambios son buenos, haced una *pull request* a este repositorio.
-
-5. Si el feedback es bueno y vuestros cambios han sido fusionados, debéis entonces actualizar vuestra copia y seguir desarrollando
-
-#### Documentación
-
-En caso de duda, podéis dirigiros al [test de pruebas](https://github.com/SaleOkase/Tests) para cacharrear todo lo que queráis con git.
+Ver [CONTRIBUTE.md](./CONTRIBUTE.md)
