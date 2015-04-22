@@ -37,15 +37,27 @@ function setupEvents(mapObject) {
   });
 
   google.maps.event.addListener(eventMarker1, 'click', function(event) {
-    togglePane(PaneEnum.event);
+    makeContent().open(mapObject, eventMarker1);
   });
 
   google.maps.event.addListener(eventMarker2, 'click', function(event) {
-    togglePane(PaneEnum.event);
+    makeContent().open(mapObject, eventMarker2);
   });
 
   google.maps.event.addListener(eventMarker3, 'click', function(event) {
-    togglePane(PaneEnum.event);
+    makeContent().open(mapObject, eventMarker3);
+  });
+}
+
+// () -> google.maps.InfoWindow
+// Make a personalized InfoWindow for the given event marker
+function makeContent() {
+  //  Placeholder content
+  // TODO: Get the event name and number of people going
+  // TODO: Figure out how to add the color circle
+  var infoContent = '<div class="info-window"><h2><a href="#" id="info-link" onclick="togglePane(PaneEnum.event)">Event Name</a></h2><p>A lot of users are going.</p></div>';
+  return new google.maps.InfoWindow({
+    content: infoContent
   });
 }
 

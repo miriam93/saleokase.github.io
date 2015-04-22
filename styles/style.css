@@ -70,14 +70,25 @@ body {
   top: 0;
 }
 
+/* Context-Sidebar close icon */
 .close-arrow img {
   width: 3rem;
   height: auto;
 }
 
-.close-arrow img {
-  width: 3rem;
-  height: auto;
+/* Google Maps Marker pop-up element */
+.info-window {
+  padding-right: 3rem;
+}
+
+/* Marker pop-up element link */
+#info-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#info-link:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 660px) {
