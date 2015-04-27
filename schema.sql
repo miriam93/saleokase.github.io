@@ -41,3 +41,19 @@ create table comments (
 	positiveVotes int,
 	negativeVotes int
 );
+
+create table reports (
+	reportsId uuid primary key,
+	author uuid references users(usersId),
+	content varchar
+);
+
+create table events_reports (
+	reportsId uuid references reports(reportsId) on delete cascade,
+	eventsId uuid references events(eventsId) on delete cascade
+);
+
+create table comments_reports (
+	reportsId uuid references reports(reportsId) on delete cascade,
+	commentsId uuid references comments(commentsId) on delete cascade
+);
