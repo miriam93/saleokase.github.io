@@ -27,7 +27,6 @@ create table events (
 	eventsId uuid primary key,
 	title varchar(50) not null,
 	description varchar not null,
-	-- TODO: Assign to [deleted] on author deleting his account
 	author uuid references users(usersId),
 	attending int not null,
 	initialDate date not null,
@@ -46,7 +45,6 @@ create table comments (
 	-- ID of parent comment - if it's the same as self, there are no parents
 	parentId uuid references comments(commentsId) on delete cascade,
 	content varchar not null,
-	-- TODO: Assign to [deleted] on author deleting his account
 	author uuid references users(usersId),
 	positiveVotes int,
 	negativeVotes int
