@@ -6,8 +6,9 @@ create table users (
 	name varchar,
 	username varchar(50) not null,
 	-- TODO: Change after we truly know the hash length - Using SHA(256) for now
-	password varchar(128) not null
-	-- TODO: Image blob
+	password varchar(128) not null,
+	profileImage blob,
+	deleted boolean not null
 );
 
 create table users_users (
