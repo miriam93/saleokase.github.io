@@ -8,7 +8,8 @@ create table users (
 	-- TODO: Change after we truly know the hash length - Using SHA(256) for now
 	password varchar(128) not null,
 	profileImage blob,
-	deleted boolean not null
+	deleted boolean not null,
+	moderator boolean not null
 );
 
 create table users_users (
