@@ -46,8 +46,9 @@ create table comments (
 	parentId uuid references comments(commentsId) on delete cascade,
 	content varchar not null,
 	author uuid references users(usersId),
-	positiveVotes int,
-	negativeVotes int
+	-- TODO: Default to 0
+	positiveVotes int not null,
+	negativeVotes int not null
 );
 
 create table events_comments (
